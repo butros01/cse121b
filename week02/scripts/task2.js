@@ -15,18 +15,16 @@ let currentYear = 2023
 
 document.querySelector('#year').textContent = currentYear
 // Step 5: declare and instantiate a variable to hold the name of your picture
-let myPicture = 'butros img'
+let myPicture = 'images/butros_img.jpg'
 
 // Step 6: copy your image into the "images" folder
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-document.querySelector('img').setAttribute('src', 'images/butros_img.jpg') = myPicture
-
-
+document.querySelector('img').setAttribute('src', myPicture)
 
 /* ARRAYS */
 
 // Step 1: declare and instantiate an array variable to hold your favorite foods
-const favFood = ['Mokimu', 'Muthokoi']
+const favFood = ['Mokimu', 'Fried Chicken', 'Muthokoi']
 // Step 2: place the values of the favorite foods variable into the HTML file
 document.querySelector('#food').textContent = favFood
 // Step 3: declare and instantiate a variable to hold another favorite food
@@ -38,13 +36,12 @@ favFood.push(anotherfavorite)
 // Step 5: repeat Step 2
 document.querySelector('#food').textContent = favFood
 // Step 6: remove the first element in the favorite foods array
-favFood.pop(0)
-
+favFood.shift()
 // Step 7: repeat Step 2
-document.querySelector('#food').textcontent = favFood
+document.querySelector('#food').textContent = favFood
 // Step 8: remove the last element in the favorite foods array
 favFood.pop()
 // Step 7: repeat Step 2
-ddocument.querySelector('#food').textcontent = favFood
+document.querySelector('#food').textContent = favFood
 
 
